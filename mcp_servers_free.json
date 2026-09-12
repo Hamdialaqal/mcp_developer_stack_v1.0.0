@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mcp-free-01",
+    "name": "SQLite & Local File MCP",
+    "category": "Database & Storage",
+    "protocol": "Model Context Protocol (JSON-RPC 2.0)",
+    "auth_type": "Local filesystem",
+    "license": "MIT",
+    "pricing_tier": "Free / Self-hosted",
+    "production_readiness": "High",
+    "summary": "Fast, local zero-latency relational store for agent persistence and tabular querying.",
+    "input_schema_summary": "{\"query\": \"string (SQL)\", \"params\": \"list\"}"
+  },
+  {
+    "id": "mcp-free-02",
+    "name": "Brave Search API Wrapper",
+    "category": "Web Search",
+    "protocol": "REST over MCP",
+    "auth_type": "API Key",
+    "license": "Proprietary / Free Tier Available",
+    "pricing_tier": "Free 2,000 req/mo",
+    "production_readiness": "High",
+    "summary": "Independent web grounding without tracking or search engine ad pollution.",
+    "input_schema_summary": "{\"q\": \"string\", \"count\": \"int (1-20)\"}"
+  },
+  {
+    "id": "mcp-free-03",
+    "name": "Headless Chromium Playwright MCP",
+    "category": "Web Scraping & Navigation",
+    "protocol": "Model Context Protocol",
+    "auth_type": "Local execution",
+    "license": "Apache-2.0",
+    "pricing_tier": "Free / Open-Source",
+    "production_readiness": "Medium-High",
+    "summary": "Executes browser navigation, dynamic JS rendering, and DOM content extraction.",
+    "input_schema_summary": "{\"url\": \"string\", \"wait_until\": \"string\"}"
+  },
+  {
+    "id": "mcp-free-04",
+    "name": "Git & GitHub Local Repository MCP",
+    "category": "Version Control",
+    "protocol": "Model Context Protocol",
+    "auth_type": "PAT / SSH",
+    "license": "MIT",
+    "pricing_tier": "Free",
+    "production_readiness": "High",
+    "summary": "Automates commit analysis, branch diffing, and PR review orchestration.",
+    "input_schema_summary": "{\"repo_path\": \"string\", \"command\": \"string\"}"
+  },
+  {
+    "id": "mcp-free-05",
+    "name": "ChromaDB Embedded Vector Store",
+    "category": "Vector DB & Memory",
+    "protocol": "Native Python / MCP",
+    "auth_type": "Local path",
+    "license": "Apache-2.0",
+    "pricing_tier": "Free / Self-hosted",
+    "production_readiness": "High",
+    "summary": "Local in-memory and persistent vector store for RAG memory across multi-turn sessions.",
+    "input_schema_summary": "{\"collection\": \"string\", \"query_embeddings\": \"list[float]\", \"n_results\": \"int\"}"
+  }
+]
